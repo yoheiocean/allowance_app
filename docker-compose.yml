@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  php:
+    image: php:8.1-apache    # You can choose a different PHP version if needed
+    container_name: php_server
+    volumes:
+      - ./web:/var/www/html   # Volume for your web files
+      - ./web/allowance_tracker.db:/var/www/html/allowance_tracker.db # Volume for the SQLite database
+    ports:
+      - "16510:80"              # Expose the PHP server on port 16510

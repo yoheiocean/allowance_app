@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Tracker</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+  <h1 class="home">Allowance Investment</h1>
+  <img class="logo" src="/static/icons/icon-512x512.png">
+  <div class="blurb">
+  <h2 class="vibrating-text">REMEMBER</h2>
+  <ul>
+    <li>The more you save, the more you make.</li>
+    <li>Try not to spend the money you invest. Instead, spend the money you generate from your investment.</li>
+    <li>You may withdraw money from this bankbook. (Just tell me.) But, try growing your overall balance. Remember, the more you save, the more you make.</li>
+  </ul>
+  </div>
+  <h2>Select your bankbook:</h2>
+  <!-- User Selection Buttons -->
+  <a href="dashboard.php?user_id=1" class="user-btn"><div class="first-button">Child1</div></a>
+  <a href="dashboard.php?user_id=2" class="user-btn"><div class="second-button">Child2</div></a>  
+  <!-- Admin Login -->
+  <div class="admin-login">
+  <h2>Dad's Page</h2>
+  <form action="admin_panel.php" method="POST">
+    <label for="admin-password">Secret code:</label>
+    <input type="password" id="admin-password" name="admin-password">
+    <button type="submit">Login</button>
+  </form>
+  </div>
+  <script src="static/js/script.js"></script>
+  <script src="static/js/reload.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js')
+          .then(registration => {
+              console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+              console.error('Service Worker registration failed:', error);
+          });
+      });
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    font-family: monospace;
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.interest {
+    color: rgb(117, 199, 117);
+}
+
+.interest .amount {
+   /* font-size: 20px; */
+    color: rgb(95, 209, 95);
+}
+
+.deposit {
+    color: #aaa;
+}
+
+.deposit .amount {
+    color: #dfdfdf;
+}
+
+.withdraw {
+    color: rgb(255, 172, 172);
+}
+
+.withdraw .amount{
+    color: rgb(245, 107, 107);
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    min-height: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.transaction-history {
+    display: flex;
+}
+
+li:nth-child(odd) {
+    background-color: #444;
+}
+
+li:nth-child(even) {
+    background-color: #333;
+}
+
+.transaction-amount {
+    width: 25%;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.transaction-description {
+    width: 80%;
+    height: 50px;
+    margin-left: 5%;
+    padding-top: 10px;
+}
+
+a {
+    color: rgb(157, 157, 230);
+}
+
+.current-balance {
+    font-size: 40px;
+    color: rgb(27, 24, 24);
+    background-color: rgb(173, 211, 198);
+    padding: 0 30px;
+}
+
+.transaction-type {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+    background-color: #444141;
+    border: none;
+    color: white;
+    font-family: monospace;
+}
+
+form input, form label, form select {
+    margin-bottom: 5px;
+    font-family: monospace;
+}
+
+.pagination {
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+.dad a {
+    color: #777;
+}
+
+.home {
+    font-size: 52px;
+    padding-top: 160px;
+    padding-bottom: 40px;
+}
+
+
+
+.blurb li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: antiquewhite;
+    min-height: auto;
+}
+
+.blurb li:first-child {
+    color: salmon;
+}
+
+.blurb {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    animation: vibrate 3s infinite;
+}
+
+.first-button, .second-button {
+    padding: 40px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    color: white;
+}
+
+.user-btn {
+    text-decoration: none;
+} 
+
+.first-button {
+    background-color: cadetblue;
+}
+
+.second-button {
+    background-color: seagreen;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0) rotate(0deg); }
+    20% { transform: translate(-2px, 0) rotate(-2deg); }
+    40% { transform: translate(2px, 0) rotate(2deg); }
+    60% { transform: translate(-2px, 0) rotate(-2deg); }
+    80% { transform: translate(2px, 0) rotate(2deg); }
+    100% { transform: translate(0) rotate(0deg); }
+}
+
+.vibrating-text {
+    display: inline-block; /* Ensure the element takes only the space it needs */
+    animation: vibrate 1s infinite; /* Adjust duration and repetition as needed */
+}
+
+.logo {
+    width: 50%; 
+    border-radius: 20%; 
+    margin-bottom: 100px;
+}
+
+.admin-login {
+    padding-top: 60px;
+    margin-bottom: 220px;
+}
+
+.dad-pfp {
+    width: 120%;
+}
